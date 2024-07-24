@@ -1,0 +1,306 @@
+html {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+body {
+    margin: 0;
+    padding: 69px 0 0;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    margin: 0 20px;
+}
+
+/* Header Section */
+
+header {
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 69px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px 10%; */
+    width: 100%; 
+    padding: 0 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav {
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: grey;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Mission Section */
+
+#mission {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*11af5lk*_gcl_au*NTEyOTgyNDIzLjE3MjEwODY5Njk.*_ga*NjIxNzY2MzQxNy4xNzIxMDg2OTY2*_ga_3LRZM6TM9L*MTcyMTcxNDAzMC4zNi4xLjE3MjE3MTQwMzIuNTguMC4w');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    position: relative;
+    align-content: center;
+}
+
+.caption {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center; 
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 1); 
+    width: 1687.8px;
+    box-sizing: border-box;
+}
+
+/* Tea of the Month Section */
+
+#featured-tea {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px; 
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.tea-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tea-images > *:nth-child(-n+3) {
+    margin-bottom: 80px;
+}
+
+.berry-blitz {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-berryblitz.jpg?_gl=1*115l807*_gcl_au*NTEyOTgyNDIzLjE3MjEwODY5Njk.*_ga*NjIxNzY2MzQxNy4xNzIxMDg2OTY2*_ga_3LRZM6TM9L*MTcyMTcxNDAzMC4zNi4xLjE3MjE3MTQwMzIuNTguMC4w');
+    min-width: 300px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+
+.berry-blitz figcaption {
+    position: absolute;
+    bottom: -60px; 
+    text-align: center; 
+    color: white; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+} 
+
+.spiced-rum {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-spiced-rum.jpg?_gl=1*17b9lgf*_gcl_au*NTEyOTgyNDIzLjE3MjEwODY5Njk.*_ga*NjIxNzY2MzQxNy4xNzIxMDg2OTY2*_ga_3LRZM6TM9L*MTcyMTcxNDAzMC4zNi4xLjE3MjE3MTQwMzIuNTguMC4w');
+    min-width: 300px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+
+.spiced-rum figcaption {
+    position: absolute;
+    bottom: -60px; 
+    text-align: center; 
+    color: white; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+} 
+
+.seasonal-donuts {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-donut.jpg?_gl=1*bkimu5*_gcl_au*NTEyOTgyNDIzLjE3MjEwODY5Njk.*_ga*NjIxNzY2MzQxNy4xNzIxMDg2OTY2*_ga_3LRZM6TM9L*MTcyMTcxNDAzMC4zNi4xLjE3MjE3MTQwMzIuNTguMC4w');
+    min-width: 300px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+
+.seasonal-donuts figcaption {
+    position: absolute;
+    bottom: -60px; 
+    text-align: center; 
+    color: white; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+} 
+
+.myrtle-ave {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-myrtle-ave.jpg?_gl=1*d4wk8m*_gcl_au*NTEyOTgyNDIzLjE3MjEwODY5Njk.*_ga*NjIxNzY2MzQxNy4xNzIxMDg2OTY2*_ga_3LRZM6TM9L*MTcyMTcxNDAzMC4zNi4xLjE3MjE3MTQwMzIuNTguMC4w');
+    min-width: 300px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+
+.myrtle-ave figcaption {
+    position: absolute;
+    bottom: -60px; 
+    text-align: center; 
+    color: white; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.bedford-bizzare {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-bedford-bizarre.jpg?_gl=1*149kh77*_gcl_au*NTEyOTgyNDIzLjE3MjEwODY5Njk.*_ga*NjIxNzY2MzQxNy4xNzIxMDg2OTY2*_ga_3LRZM6TM9L*MTcyMTcxNDAzMC4zNi4xLjE3MjE3MTQwMzIuNTguMC4w');
+    min-width: 300px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+
+.bedford-bizzare figcaption {
+    position: absolute;
+    bottom: -60px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    font-weight: bold;
+} 
+
+/* Locations Section */
+#locations {
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*1ucb23z*_gcl_au*NTEyOTgyNDIzLjE3MjEwODY5Njk.*_ga*NjIxNzY2MzQxNy4xNzIxMDg2OTY2*_ga_3LRZM6TM9L*MTcyMTcxNDAzMC4zNi4xLjE3MjE3MTQwMzIuNTguMC4w');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 500px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto; 
+    box-sizing: border-box;
+    margin-top: 200px;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.location-title {
+    text-align: center;
+    padding-top: 5px;
+    margin: 30px 0;
+    font-weight: bold; 
+    margin-bottom: 15px;
+}
+
+.location-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box h3 {
+    margin: 5px 0;
+    text-align: center; 
+    font-weight: bold;
+}
+.box h4 {
+    margin: 5px 0;
+    text-align: center; 
+    font-weight: normal;
+}
+
+/* Footer Section */
+
+#contact {
+    text-align: center;
+    height: 200px;
+}
+
+.copyright {
+    text-align: left;
+}
